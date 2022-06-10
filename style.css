@@ -1,0 +1,16 @@
+body{
+    margin:auto;
+    align-items: center;
+    text-align: center;
+}
+.container{
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-elem{
+    margin-top: 10;
+    margin-bottom: 10;
+}
