@@ -40,20 +40,20 @@ function colorChange(){
         if(s.match(char).length <=145/2){
 
                 p.style.color ='green'
-                p.style = 'font-weight:bold; font-size:40px; margin-top:5px; flex-wrap:wrap';
+                p.style = 'font-weight:bold; font-size:60px; margin-top:5px; flex-wrap:wrap';
                 number.style.color = 'green'
                 words.style.color = 'green'
                 p.style.textAlign = 'center'
         }
         else if(s.match(char).length >=145/2 && s.match(char).length <135){
-                p.style = 'font-weight:bold; font-size:25px; margin-top:5px; flex-wrap:wrap';
+                p.style = 'font-weight:bold; font-size:45px; margin-top:5px; flex-wrap:wrap';
                 p.style.color = '#1DA1F2';
                 p.style.textAlign = 'center'
 
 
         }
         else if(s.match(char).length >=135 && s.match(char).length<=145){
-                p.style = 'font-weight:bold; font-size:18px; margin-top:5px; flex-wrap:wrap';
+                p.style = 'font-weight:bold; font-size:25px; margin-top:5px; flex-wrap:wrap';
                 p.style.color ='red';
                 number.style.color ='red';
                 p.style.textAlign = 'center'
