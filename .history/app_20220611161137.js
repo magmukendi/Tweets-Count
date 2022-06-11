@@ -66,3 +66,18 @@ function myFunction(){
         saveAs(blob, "thing.txt");
 
 }
+
+
+/*function add(){
+        let p = document.getElementById('tt');
+        let d =parseInt(p.value)
+        if (d>=0){
+                result += d;
+                p.value =''
+                console.log(result)
+        }
+        else{
+                alert("please enter a number")
+        }
+}*/
+
