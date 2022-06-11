@@ -89,6 +89,6 @@ function copy(){
         let r = document.getElementById('tt').value
         navigator.clipboard.writeText(r).then(() =>{
                 console.log("Successfully copied")
-                alert("You text was copied in the clipboard")
+                alert("You tweets")
         })
 }
