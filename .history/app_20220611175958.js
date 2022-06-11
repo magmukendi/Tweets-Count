@@ -87,7 +87,7 @@ function myFunction(){
 }
 function copy(){
         let r = document.getElementById('tt').value
-        navigator.clipboard.writeText(r).then(() =>{
+        navigator.clipboard.writeText(xValue).then(() =>{
                 console.log("Successfully copied")
                 alert("Copied to clipboard")
         })
