@@ -83,9 +83,5 @@ function myFunction(){
                 type: "text/plain;charset=utf-8;",
             });
         saveAs(blob, "thing.txt");
-}
-function copy(){
-        navigator.clipboard.writeText(xValue).then(() =>{
-                console.log("Successfully copied")
-        })
+
 }

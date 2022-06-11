@@ -84,8 +84,4 @@ function myFunction(){
             });
         saveAs(blob, "thing.txt");
 }
-function copy(){
-        navigator.clipboard.writeText(xValue).then(() =>{
-                console.log("Successfully copied")
-        })
-}
+copyClipBoard()

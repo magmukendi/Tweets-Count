@@ -54,7 +54,8 @@ button{
 }
 
 button p{
-    
+    font-size: 50px;
+    font-weight: bold;
 }
 
 #result{

@@ -86,6 +86,6 @@ function myFunction(){
 }
 function copy(){
         navigator.clipboard.writeText(xValue).then(() =>{
-                console.log("Successfully copied")
+                console.log(" was copied")
         })
 }
