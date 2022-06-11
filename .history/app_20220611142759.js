@@ -14,7 +14,6 @@ function print(){
         doc.innerHTML = '';
         x = document.getElementById('tt');
         p = document.createElement('p')
-        number = document.createElement('p')
         xValue = x.value;
         if (xValue){
                 p.innerText = xValue
@@ -54,7 +53,7 @@ function myFunction(){
 }
 
 
-/*function add(){
+function add(){
         let p = document.getElementById('tt');
         let d =parseInt(p.value)
         if (d>=0){
@@ -65,5 +64,56 @@ function myFunction(){
         else{
                 alert("please enter a number")
         }
-}*/
+}
 
+function sub(){
+        let p = document.getElementById('tt');
+        let d =parseInt(p.value)
+        if (d>=0){
+                if (result===0){
+                        result=d
+                }
+                else{
+                        result -= d;
+<<<<<<< HEAD
+                }
+                p.value =''
+                console.log(result)
+=======
+                        
+                }
+                o.style.color ='green'
+                input.value =''
+>>>>>>> e42d584aa8da9c71fd4abc0afb75dc698dca352e
+        }
+        else{
+                alert("please enter a number")
+        }
+<<<<<<< HEAD
+}
+=======
+        console.log(list)
+        console.log(result)
+}
+
+function equals(){
+        console.log(input.value)
+        d = parseInt(input.value)
+        if (list[-1]==1){
+                result = result + d;
+        }
+        else if (list[-1] ==2){
+                result -=d
+        }
+        o.innerText = result;
+        console.log(result)
+}
+
+function del(){
+        
+        result = 0
+        input.value = ''
+        o.innerText = result
+        o.style.color = 'black'
+}
+>>>>>>> e42d584aa8da9c71fd4abc0afb75dc698dca352e

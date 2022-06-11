@@ -14,7 +14,7 @@ function print(){
         doc.innerHTML = '';
         x = document.getElementById('tt');
         p = document.createElement('p')
-        number = document.createElement('p')
+        number = document.createE
         xValue = x.value;
         if (xValue){
                 p.innerText = xValue

@@ -14,7 +14,6 @@ function print(){
         doc.innerHTML = '';
         x = document.getElementById('tt');
         p = document.createElement('p')
-        number = document.createElement('p')
         xValue = x.value;
         if (xValue){
                 p.innerText = xValue
@@ -54,7 +53,7 @@ function myFunction(){
 }
 
 
-/*function add(){
+function add(){
         let p = document.getElementById('tt');
         let d =parseInt(p.value)
         if (d>=0){
@@ -65,5 +64,22 @@ function myFunction(){
         else{
                 alert("please enter a number")
         }
-}*/
+}
 
+function sub(){
+        let p = document.getElementById('tt');
+        let d =parseInt(p.value)
+        if (d>=0){
+                if (result===0){
+                        result=d
+                }
+                else{
+                        result -= d;
+                }
+                p.value =''
+                console.log(result)
+        }
+        else{
+                alert("please enter a number")
+        }
+}
