@@ -65,7 +65,7 @@ function colorChange(){
         else if(s.match(char).length >145){
                 number.innerText= "You have " + (s.match(char).length - 145) +" more characters than expected.";
                 //p.style.visibility ='hidden'
-                p.innerText= "Sorry, we cannot display your text\n You typed over 145 characters.";
+                p.innerText= "Sorry, we cannot display your text\n You text over 145 characters.";
                 number.style.color="red"
                 p.style.textAlign = 'center'
         }
