@@ -19,13 +19,13 @@ export default function readability(x){
     if (grade <= 1)
     {
         grade = "Before grade 1"
-        grade = "Before Grade 1\n";
+
     }
 
     // check if the grade is greater than  16.
     else if (grade >= 16)
     {
-        grade = "Grade 16+\n";
+        grade = "Grade 16+";
     }
     else{
         grade = `Grade ${grade}\n`

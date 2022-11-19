@@ -1,14 +1,12 @@
 import readability from './readability.mjs'
-let list = []
 let result = 0;
 let x;
 let p;
 let xValue;
 let s;
 let number;
-let input = document.getElementById('tt');
-let d;
-let e;
+//let input = document.getElementById('tt');
+
 let doc = document.getElementById('result');
 let words;
 
@@ -100,13 +98,7 @@ function render (){
         
 }
 render()
-function myFunction(){
-        let ll = document.getElementById('txx')
-        var blob = new Blob([ll.innerText], {
-                type: "text/plain;charset=utf-8;",
-            });
-        saveAs(blob, "thing.txt");
-}
+
 function copy(){
         let target = document.getElementById('tt')
         let r = target.value !== undefined ? target.value : ""
@@ -115,3 +107,13 @@ function copy(){
                 alert("You text was copied in the clipboard")
         })
 }
+
+
+/*
+function myFunction(){
+        let ll = document.getElementById('txx')
+        var blob = new Blob([ll.innerText], {
+                type: "text/plain;charset=utf-8;",
+            });
+        saveAs(blob, "thing.txt");
+}*/
