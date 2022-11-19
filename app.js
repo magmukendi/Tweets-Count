@@ -1,4 +1,4 @@
-
+import readability from './readability.mjs'
 let list = []
 let result = 0;
 let x;
@@ -10,6 +10,7 @@ let input = document.getElementById('tt');
 let d;
 let e;
 let doc = document.getElementById('result');
+let words;
 
 function print(){
         doc.innerHTML = '';
@@ -17,43 +18,56 @@ function print(){
         p = document.createElement('p')
         number = document.createElement('p')
         words = document.createElement('p')
-        xValue = x.value;
-        if (xValue){
-                p.innerText = '" ' + xValue + ' "' 
+        
+
+        if(x.value){
+                xValue = x.value
         }
-        doc.append(number)
-        doc.append(words)
-        doc.appendChild(p)
-        p.id = "txx"
-        number.id = "charCount"
-        words.id = "wordCount"
-        p.style = 'font-weight:bold; font-size:40px; margin-top:5px; flex-wrap:wrap';
+        else{
+                xValue=""
+        }
+        if (xValue){
+                console.log(xValue)
+                //p.innerText = '" ' + xValue + ' "' 
+                doc.append(number)
+                doc.append(words)
+                //doc.appendChild(p)
+                //p.id = "txx"
+                number.id = "charCount"
+                words.id = "wordCount"
+                //p.style = 'font-weight:bold; font-size:40px; margin-top:5px; flex-wrap:wrap';
+        }
+        
+        
+        xValue !== undefined && colorChange(xValue)
 }
-function colorChange(){
-        s = xValue
-        let word =/\w+/g
+function colorChange(value){
+        if(value !== undefined){
+                s = value
+                console.log(value)
+                let word =/\w+/g
         let char = /.|\s|\n+/g
         console.log(s.match(char).length)
 
-        number.innerText = (145 - s.match(char).length) + " characters left";
+        number.innerText = (280 - s.match(char).length) + " characters left";
         
         words.innerText = s.match(word).length +" words"
-        if(s.match(char).length <=145/2){
+        if(s.match(char).length <=280/2){
 
-                p.style.color ='green'
-                p.style = 'font-weight:bold; font-size:40px; margin-top:5px; flex-wrap:wrap';
+                //p.style.color ='green'
+                //p.style = 'font-weight:bold; font-size:40px; margin-top:5px; flex-wrap:wrap';
                 number.style.color = 'green'
                 words.style.color = 'green'
-                p.style.textAlign = 'center'
+                //p.style.textAlign = 'center'
         }
-        else if(s.match(char).length >=145/2 && s.match(char).length <135){
-                p.style = 'font-weight:bold; font-size:25px; margin-top:5px; flex-wrap:wrap';
-                p.style.color = '#1DA1F2';
-                p.style.textAlign = 'center'
+        else if(s.match(char).length >=280/2 && s.match(char).length <135){
+                //p.style = 'font-weight:bold; font-size:25px; margin-top:5px; flex-wrap:wrap';
+                //p.style.color = '#1DA1F2';
+                //p.style.textAlign = 'center'
 
 
         }
-        else if(s.match(char).length >=135 && s.match(char).length<=145){
+        else if(s.match(char).length >=135 && s.match(char).length<=280){
                 p.style = 'font-weight:bold; font-size:18px; margin-top:5px; flex-wrap:wrap';
                 p.style.color ='red';
                 number.style.color ='red';
@@ -63,19 +77,27 @@ function colorChange(){
                 
         }
 
-        else if(s.match(char).length >145){
-                number.innerText= "You have " + (s.match(char).length - 145) +" more characters than expected.";
+        else if(s.match(char).length >280){
+                number.innerText= "You have " + (s.match(char).length - 280) +" more characters than expected.";
                 //p.style.visibility ='hidden'
-                p.innerText= "Sorry, we cannot display your text.\n You typed over 145 characters.";
+                p.innerText= "Sorry, we cannot display your text.\n You typed over 280 characters.";
                 number.style.color="red"
                 p.style.textAlign = 'center'
         }
 
+        }
+        else{
+                s = "Hello"
+        }
+        
         
 }
 function render (){
         document.getElementById('tt').addEventListener('keyup', print)
-        document.getElementById('tt').addEventListener('keyup', colorChange)
+        document.getElementById('readability').addEventListener('click', ()=>readability(xValue))
+        document.getElementById('copy').addEventListener('click', ()=>copy())
+
+        
 }
 render()
 function myFunction(){
@@ -86,7 +108,8 @@ function myFunction(){
         saveAs(blob, "thing.txt");
 }
 function copy(){
-        let r = document.getElementById('tt').value
+        let target = document.getElementById('tt')
+        let r = target.value !== undefined ? target.value : ""
         navigator.clipboard.writeText(r).then(() =>{
                 console.log("Successfully copied")
                 alert("You text was copied in the clipboard")

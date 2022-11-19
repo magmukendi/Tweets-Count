@@ -27,18 +27,21 @@
             <h2 id="Title"><b>Tweet Characters Counter</b></h2>
         </div>
         <textarea id="tt" placeholder="Type here :)" class="mt-2 mb-2" id="won" autosize></textarea>
-
-           
-           <button onclick="copy()" class="btn btn-primary bg-#1DA1F2">Copy to Clipboard</button>      
+        
+        <div class="button-container">
+            <button id="readability" class="btn btn-primary bg-white text-primary">Check Readability</button>
+            <button id="copy" class="btn btn-primary bg-#1DA1F2">Copy to Clipboard</button>      
+           </div>
 
         
 
     </div>
 
     <div id="result" >
-
+    
     </div>
 
+    <p id ="coleman">This web application uses the <strong><a id="link-coleman" target="_blank" href="https://en.wikipedia.org/wiki/Coleman%E2%80%93Liau_index">Coleman-Liau Index</a></strong></p>
     <p id ="shar">A button to share directly on twitter is coming soon :)</p>
 
 
@@ -76,6 +79,6 @@
     </div>
     
     
-    <script type="text/javascript" src="app.js"></script> 
+    <script type="module" src="app.js"></script> 
 </body>
 </html>
