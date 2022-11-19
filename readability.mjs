@@ -1,6 +1,5 @@
 
 let doc = document.getElementById('result');
-
 export default function readability(x){
 
     if(!x){
@@ -30,11 +29,10 @@ export default function readability(x){
     else{
         grade = `Grade ${grade}\n`
     }
-    let userGrade = document.createElement('p')
+    let userGrade = document.getElementById('grade');
     userGrade.innerText = `This text is ${grade}`
-    userGrade.id = "grade"
     console.log(userGrade.innerText)
-    doc.append(userGrade)
+    
     
     return grade;
     

@@ -5,17 +5,29 @@ let p;
 let xValue;
 let s;
 let number;
+let userGrade;
 //let input = document.getElementById('tt');
 
 let doc = document.getElementById('result');
 let words;
 
+function createGrade(){
+        
+}
+
+createGrade()
 function print(){
         doc.innerHTML = '';
         x = document.getElementById('tt');
         p = document.createElement('p')
         number = document.createElement('p')
         words = document.createElement('p')
+        userGrade = document.createElement('p')
+        
+        
+
+        
+
         
 
         if(x.value){
@@ -29,10 +41,13 @@ function print(){
                 //p.innerText = '" ' + xValue + ' "' 
                 doc.append(number)
                 doc.append(words)
+                doc.append(userGrade)
                 //doc.appendChild(p)
                 //p.id = "txx"
                 number.id = "charCount"
                 words.id = "wordCount"
+                userGrade.innerText=""
+                userGrade.id = "grade"
                 //p.style = 'font-weight:bold; font-size:40px; margin-top:5px; flex-wrap:wrap';
         }
         
