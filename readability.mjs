@@ -1,7 +1,10 @@
 
-let doc = document.getElementById('result');
-export default function readability(x){
 
+
+/* The function to do all the readability test in one*/
+export default function readability(x){
+    
+    let userGrade = document.getElementById('grade');
     if(!x){
         x = document.getElementById('tt').value;
     }
@@ -11,6 +14,9 @@ export default function readability(x){
     let grade = colemanIndex(words, letters, sentences)
     
     if(grade === false){
+        userGrade.style.color = "red"
+        userGrade.style.fontSize = '10px'
+        userGrade.innerText = "Please type more than 10 words"
         return 0;
     }
     
@@ -29,7 +35,6 @@ export default function readability(x){
     else{
         grade = `Grade ${grade}\n`
     }
-    let userGrade = document.getElementById('grade');
     userGrade.innerText = `This text is ${grade}`
     console.log(userGrade.innerText)
     

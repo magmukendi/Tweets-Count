@@ -73,14 +73,14 @@ function colorChange(value){
                 words.style.color = 'green'
                 //p.style.textAlign = 'center'
         }
-        else if(s.match(char).length >=280/2 && s.match(char).length <135){
+        else if(s.match(char).length >=280/2 && s.match(char).length <270){
                 //p.style = 'font-weight:bold; font-size:25px; margin-top:5px; flex-wrap:wrap';
                 //p.style.color = '#1DA1F2';
                 //p.style.textAlign = 'center'
 
 
         }
-        else if(s.match(char).length >=135 && s.match(char).length<=280){
+        else if(s.match(char).length >=270 && s.match(char).length<=280){
                 p.style = 'font-weight:bold; font-size:18px; margin-top:5px; flex-wrap:wrap';
                 p.style.color ='red';
                 number.style.color ='red';
@@ -109,8 +109,20 @@ function render (){
         document.getElementById('tt').addEventListener('keyup', print)
         document.getElementById('readability').addEventListener('click', ()=>readability(xValue))
         document.getElementById('copy').addEventListener('click', ()=>copy())
+        document.getElementById('close').addEventListener('click', ()=>clear())
+
 
         
+}
+
+function clear(){
+        let x = document.getElementById('tt');
+        x.value= ""
+        words.innerText = ""
+        number.innerText = ""
+
+
+
 }
 render()
 

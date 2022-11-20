@@ -45,6 +45,8 @@ body{
     border:3px ridge #1DA1F2;
     border-radius: 3px;
     background-color: white;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 
@@ -53,14 +55,74 @@ button{
     
 }
 
+.full{
+    all: unset;
+    width:100%;
+    padding:1rem;
+    height:max-content;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.full-t{
+    width:100%;
+    padding:1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+#close{
+    margin-left: 0.5rem;
+    width:20px;
+    height: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 2;
+    background-color:#1DA1F2;
+    transition: 0.3s ease-in-out;
+    border-radius: 100%;
+    padding:0.5rem;
+    font-size: 10px;
+    position: absolute;
+    right:3%;
+    top:15%;
+}
+#answer{
+    width: 50%;
+}
+
+#readability{
+    color:#1DA1F2;
+    border: 1px solid #1DA1F2;
+}
+#copy{
+    background-color: #1DA1F2;
+}
+#close:hover{
+    cursor: pointer;
+    background: white;
+    color:#1DA1F2;
+    transition: 0.3s ease-in-out;
+    border: 1px solid#1DA1F2;
+
+}
 
 
 #result{
-    width: 85%;
+    width: 60%;
     margin: auto;
     margin-top:10px;
     flex-wrap: wrap;
     text-align: justify;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 #charCount{
     font-size: 15px;
@@ -109,4 +171,51 @@ font-size: 10px;
     align-self: center;
     text-align: center;
     font-weight: bold;
+}
+.button-container{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: center;
+    gap:1rem;
+    margin-top: 1rem ;
+
+}
+
+
+@media (width < 480px){
+    #answer{
+        width:100%;
+    }
+    #close{
+        top:10%
+
+    }
+
+    #tt{
+        left: 0%;
+    }
+    .button-container{
+        flex-direction: column;
+        box-sizing: border-box;
+        gap:unset
+    }
+    .button-container button{
+        margin-top: 1rem;
+        width: 100%;
+    }
+    .full{
+        width: 100%;
+        padding: unset;
+    }
+    .full-t{
+        position: relative;
+        height: fit-content;
+        width: 100%;
+        padding: unset;
+    }
+    #coleman{
+        margin-top: 0.5rem;
+    }
 }
