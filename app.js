@@ -1,11 +1,11 @@
 import readability from './readability.mjs'
-let result = 0;
 let x;
 let p;
 let xValue;
 let s;
 let number;
 let userGrade;
+let robot = document.getElementById('robot-check')
 //let input = document.getElementById('tt');
 
 let doc = document.getElementById('result');
@@ -111,7 +111,6 @@ function render (){
         document.getElementById('copy').addEventListener('click', ()=>copy())
         document.getElementById('close').addEventListener('click', ()=>clear())
 
-
         
 }
 
@@ -134,6 +133,7 @@ function copy(){
                 alert("You text was copied in the clipboard")
         })
 }
+
 
 
 /*

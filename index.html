@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="shortcut icon" href="assets/images/mag-icon.ico"image/x-icon">
     <script src="https://kit.fontawesome.com/cd3abaa76f.js" crossorigin="anonymous"></script>
-
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <link href="style.css" rel="stylesheet">
     <title>Mag's Tweets Readability - Check you tweets readability and never mistweet again.</title>
 </head>
@@ -30,11 +30,16 @@
         <div class="full">
             <div class="full-t">
 
-                <textarea id="tt" placeholder="Type here :)"  id="won" autosize>
-                </textarea>
+                <textarea id="tt" placeholder="Type here :)"  id="won" autosize></textarea>
                 <div id="close" >X</div>
             </div>
-            
+            <button 
+            id="robot-check" 
+            class="btn btn-primary g-recaptcha"
+            data-sitekey="6LckXTIjAAAAAFnmz5z4iZ_YboPcoqeEC2ZeefbQ"
+            data-callback="checkRobot"
+            data-action="submit"
+            >Not a robot</button>
             <div class="button-container">
                 <button id="readability" class="btn btn-primary bg-white ">Check Readability</button>
                 <button id="copy" class="btn btn-primary bg-#1DA1F2">Copy to Clipboard</button>      
@@ -86,7 +91,12 @@
         </span>
     </div>
     
-    
-    <script type="module" src="app.js"></script> 
+   <script>
+    function checkRobot(token){
+        document.getElementById('robot-check').submit()
+    }
+   </script> 
+    <script type="module" src="app.js">
+    </script> 
 </body>
 </html>
