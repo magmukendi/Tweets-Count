@@ -1,13 +1,46 @@
-# Tweets-Count
+# Tweets Readability
+
+**Tweets Readability** is a web application that allows the users to check the readability of their text before tweeting it using Coleman-Liau index of readability.
 
 
-This is a simple app built using JavaScript , HTML and CSS. 
+![image](https://user-images.githubusercontent.com/64711820/203917497-d1283ea6-2ad8-40a8-a561-a67daf753fca.png)
 
-We all have that struggle when we write our tweets we hit alt Enter and end up sending our tweet unvoluntarily. so I built that twitter that help people draft their text, by words and also let yoiu see how your twee will look like. If it is sent.
 
-Additionally, using the Coleman-Liau index or readability, the web application evaluate the tweet.
+## Install & Usage
 
-Up coming features:
+For local use, download the project and point your browser at `index.html`.
 
-- [ ] Sharing on twitter
-- [ ] Sentence graders using
+**To host Tweets Readability**, download the project and serve the project's contents with your favorite web server. You and your users can then point the browser at `index.html`.
+
+## Features
+
+- [X] Tracking the number of letters, words and sentences.
+- [X] Informing the users if they write more than twitter official character limit.
+- [X] Evaluating the readability of tweets with more than 10 words.
+- [X] Copying the tweets in the clipboard.
+- [ ] Sharing on twitter.
+- [ ] Checking if the user is not a robot.
+
+## External Resources
+
+### JavaScript libraries
+
+Google Maps: can't be provided, so an internet connection must be available for use
+JQuery
+JQuery UI
+JQuery Templates Plugin
+Crockford's json2.js
+
+### Images
+JQuery UI
+Linux Mint's Mint-X Theme: empty.png, json.png, download.png, upload.png
+Google Maps: dot.png, marker.png
+### Tested with
+Google Chrome 16.0.912.77
+Firefox 10.0.2
+Microsoft Internet Explorer 7
+### License
+MyMaps is MIT licensed. See the links above for licenses of external resources.
+
+
+
