@@ -21,20 +21,19 @@ For local use, download the project and point your browser at `index.html`.
 - [ ] Sharing on twitter.
 - [ ] Checking if the user is not a robot.
 
-## External Resources
 
-### Technology & Ressources
+## Technology & Ressources
 
 - Javascript
 - [Google Recaptcha](https://developers.google.com/recaptcha/docs/v3).
 - [Twitter API](https://developer.twitter.com/).
 - [Coleman-Liau Index](https://en.wikipedia.org/wiki/Coleman%E2%80%93Liau_index)
 
-### Tested with
+## Tested with
 - Google Chrome 107.0.5304.107
 - Firefox 107.0
 
-### License
+## License
 Tweets Readability is MIT licensed.
 
 
