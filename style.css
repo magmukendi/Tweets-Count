@@ -185,7 +185,7 @@ font-size: 10px;
 
 #robot-check{
     width:45%;
-    margin: auto;
+    margin: 10px auto 5px auto;
     box-sizing: border-box;
     background-color: #1DA1F2;
     color:white;

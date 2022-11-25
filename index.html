@@ -40,6 +40,7 @@
             data-callback="checkRobot"
             data-action="submit"
             >Not a robot</button>
+            
             <div class="button-container">
                 <button id="readability" class="btn btn-primary bg-white ">Check Readability</button>
                 <button id="copy" class="btn btn-primary bg-#1DA1F2">Copy to Clipboard</button>      
@@ -93,6 +94,7 @@
     
    <script>
     function checkRobot(token){
+        console.log("DONE")
         document.getElementById('robot-check').submit()
     }
    </script> 
