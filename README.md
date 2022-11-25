@@ -31,9 +31,8 @@ For local use, download the project and point your browser at `index.html`.
 - [Coleman-Liau Index](https://en.wikipedia.org/wiki/Coleman%E2%80%93Liau_index)
 
 ### Tested with
-Google Chrome 107.0.5304.107
-Firefox 107.0
-Microsoft Internet Explorer 7
+- Google Chrome 107.0.5304.107
+- Firefox 107.0
 
 ### License
 Tweets Readability is MIT licensed.
