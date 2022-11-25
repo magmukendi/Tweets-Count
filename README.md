@@ -23,24 +23,20 @@ For local use, download the project and point your browser at `index.html`.
 
 ## External Resources
 
-### JavaScript libraries
+### Technology & Ressources
 
-Google Maps: can't be provided, so an internet connection must be available for use
-JQuery
-JQuery UI
-JQuery Templates Plugin
-Crockford's json2.js
+- Javascript
+- [Google Recaptcha](https://developers.google.com/recaptcha/docs/v3).
+- [Twitter API](https://developer.twitter.com/).
+- [Coleman-Liau Index](https://en.wikipedia.org/wiki/Coleman%E2%80%93Liau_index)
 
-### Images
-JQuery UI
-Linux Mint's Mint-X Theme: empty.png, json.png, download.png, upload.png
-Google Maps: dot.png, marker.png
 ### Tested with
-Google Chrome 16.0.912.77
-Firefox 10.0.2
+Google Chrome 107.0.5304.107
+Firefox 107.0
 Microsoft Internet Explorer 7
+
 ### License
-MyMaps is MIT licensed. See the links above for licenses of external resources.
+Tweets Readability is MIT licensed.
 
 
 
