@@ -1,9 +1,11 @@
 # Tweets Readability
 
+![image](https://github.com/243Studio/gif/raw/main/twitter.gif)
+
 **[Tweets Readability](https://magmukendi.me/Tweets-Count/)** is a web application that allows the users to check the readability of their text before tweeting it using Coleman-Liau index of readability.
 
 
-![image](https://github.com/243Studio/gif/raw/main/twitter.gif)
+
 
 
 ## Install & Usage
