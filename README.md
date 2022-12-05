@@ -3,7 +3,7 @@
 **Tweets Readability** is a web application that allows the users to check the readability of their text before tweeting it using Coleman-Liau index of readability.
 
 
-![image](https://user-images.githubusercontent.com/64711820/203917497-d1283ea6-2ad8-40a8-a561-a67daf753fca.png)
+![image](https://github.com/243Studio/gif/raw/main/twitter.gif)
 
 
 ## Install & Usage
