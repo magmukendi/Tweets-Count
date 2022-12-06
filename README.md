@@ -1,8 +1,8 @@
-# Tweets Readability
+# Tweetability
 
 ![image](https://github.com/243Studio/gif/raw/main/twitter.gif)
 
-**[Tweets Readability](https://magmukendi.me/Tweets-Count/)** is a web application that allows the users to check the readability of their text before tweeting it using Coleman-Liau index of readability.
+**[Tweetability](https://magmukendi.me/Tweets-Count/)** is a web application that allows the users to check the readability of their text before tweeting it using Coleman-Liau index of readability.
 
 
 
@@ -36,7 +36,7 @@ For local use, download the project and point your browser at `index.html`.
 - Firefox 107.0
 
 ## License
-Tweets Readability is MIT licensed.
+Tweetability is MIT licensed.
 
 
 
